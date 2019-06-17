@@ -14,7 +14,7 @@ Fluxograma:
 
 Diagrama de Classes:
 
-<img src="Imagens/Diagrama_de_Classes1.PNG " width="500">
+<img src="Imagens/Diagrama_de_Classes1.PNG " width="300">
 
 
 Esboço da interface: usando a interface gráfica do LabVIEW, foi criado um esboço de como ficará o projeto:
