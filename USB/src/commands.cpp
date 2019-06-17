@@ -11,23 +11,20 @@ uint16_t cmd_info(uint16_t argc, uint8_t *argv8[]){
 	uint16_t size=0;
 	char* buffer=(char*)argv[0];
 	static char palavra;
-	palavra= argv8[2][0];
+
 
 
 	if(argc==2){
 
-		if(palavra=='liga'){
+		int numero= atoi((char*)argv8[1]);
 
-			 STM_EVAL_LEDOn(LED6);
+		if(numero== atoi((char*)'toggle') ){
 
-		}
-
-		else if(palavra=='desliga') {
-
-
-			 STM_EVAL_LEDOff(LED6);
+			 STM_EVAL_LEDToggle(LED6);
 
 		}
+
+
 	}
 
 	else {
