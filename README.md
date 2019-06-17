@@ -14,6 +14,6 @@ Fluxograma:
 
 Diagrama de Classes:
 
-<img src="Imagens/Diagrama_de_Classe1.PNG" width="500">
+<img src="Imagens/Diagrama_de_Classes1.PNG " width="500">
 
 
