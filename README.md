@@ -11,3 +11,9 @@ usuário pode extimar as constantes PID do motor.
 Fluxograma:
 
 <img src="Imagens/Fluxograma.PNG" width="500">
+
+Diagrama de Classes:
+
+<img src="Imagens/Diagrama_Classe1.PNG" width="500">
+
+
