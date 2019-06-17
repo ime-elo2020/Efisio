@@ -10,4 +10,4 @@ usuário pode extimar as constantes PID do motor.
 
 Fluxograma:
 
-<img src="Fluxograma.png" width="500">
+<img src="Fluxograma.PNG" width="500">
