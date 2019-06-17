@@ -20,4 +20,4 @@ Diagrama de Classes:
 Esboço da interface: usando a interface gráfica do LabVIEW, foi criado um esboço de como ficará o projeto:
 
 
-<img src="Imagens/interface_20grafica.jpeg " width="500">
+<img src="Imagens/interface_20grafica.jpeg.jpg " width="500">
