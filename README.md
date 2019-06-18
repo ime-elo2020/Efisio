@@ -20,6 +20,10 @@ No início do programa, os periféricos são configurados e incicializados confo
 
 <img src="Imagens/Pinagem.PNG" width="500">
 
+E a configuração de Clock foi feita da seguinte forma:
+
+<img src="Imagens/Clock.PNG" width="500">
+
 Para a interface gráfica, foram pensadas nas seguintes classes:
 
 
