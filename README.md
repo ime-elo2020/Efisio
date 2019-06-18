@@ -39,7 +39,7 @@ No programa, a interface irá enviar os dados de constantes PID e velocidade par
 
 E o código que executa isso é o seguinte:
 
-                        pwm_m0 = 300.0f*velocidade_des0 + kp*e_m0 + ki*ierror_m0 + kd*derror_m0;
+                      pwm_m0 = 300.0f*velocidade_des0 + kp*e_m0 + ki*ierror_m0 + kd*derror_m0;
 
 			speed_saida_0 = pwm_m0*1000;
 
