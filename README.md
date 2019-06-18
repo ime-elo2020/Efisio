@@ -54,9 +54,9 @@ E o código que executa isso é o seguinte:
 			pwm_m1=-pwm_m1;
 
 
+O código foi implementado na seguinte interface, mas o teste não foi filmado:
 
-
-
+<img src="Imagens/Interface_definitiva.jpeg " width="500">
 
 
 
