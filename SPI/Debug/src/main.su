@@ -1,0 +1,6 @@
+core_cm4.h:1156:22:NVIC_SetPriority	16	static
+core_cm4.h:1281:26:SysTick_Config	16	static
+main.c:109:5:main	16	static
+main.c:213:6:Delay	16	static
+main.c:237:6:TimingDelay_Decrement	4	static
+main.c:263:10:LIS302DL_TIMEOUT_UserCallback	4	static
