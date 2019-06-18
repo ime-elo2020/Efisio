@@ -35,7 +35,7 @@ Esboço da interface: usando a interface gráfica do LabVIEW, foi criado um esbo
 
 No programa, a interface irá enviar os dados de constantes PID e velocidade para determinada roda. Com o comando enviado, a placa irá enviar o comando de pwm para o módulo de motor para o motor executar determinada velocidade. O encoder irá medir a velocidade da roda e a placa executará o controle PID com as constantes definidas pelo LabView. O controle PID funciona da seguinte forma:
 
-<img src="Imagens/Controle.jpeg.jpg " width="500">
+<img src="Imagens/Diagrama.PNG " width="500">
 
 
 
