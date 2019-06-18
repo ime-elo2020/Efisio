@@ -37,6 +37,23 @@ No programa, a interface irá enviar os dados de constantes PID e velocidade par
 
 <img src="Imagens/Diagrama.PNG " width="500">
 
+E o código que executa isso é o seguinte:
+
+      pwm_m0 = 300.0f*velocidade_des0 + kp*e_m0 + ki*ierror_m0 + kd*derror_m0;
+
+			speed_saida_0 = pwm_m0*1000;
+
+			pwm_m1 = 300.0f*velocidade_des1 + kp*e_m1 + ki*ierror_m1 + kd*derror_m1;
+
+			speed_saida_1 = pwm_m1*1000;
+
+			pwm_m1=-pwm_m1;
+
+
+
+
+
+
 
 
 
