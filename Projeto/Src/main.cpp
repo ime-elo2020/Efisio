@@ -188,7 +188,7 @@ int main(void)
 
 
 	/* Start scheduler */
-	osKernelStart();// faz com que o infinite loop não funcione
+	osKernelStart();// faz com que o infinite loop nÃ£o funcione
 
 	/* We should never get here as control is now taken by the scheduler */
 
@@ -603,7 +603,7 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE END 4 */
 
-// FUNÇÕES PARA PROTOBUFF
+// FUNÃ‡Ã•ES PARA PROTOBUFF
 
 bool pb_circularbuffer_read(pb_istream_t *stream, pb_byte_t *buf, size_t count){
 	bool result=false;
@@ -639,7 +639,7 @@ pb_istream_t pb_istream_from_circularbuffer(CircularBuffer<uint8_t> *circularbuf
 	return stream;
 }
 
-// Parâmetros e constantes:
+// ParÃ¢metros e constantes:
 
 uint8_t id=1;  //ID
 uint8_t channel=92;
@@ -730,7 +730,7 @@ void StartDefaultTask(void const * argument)
 
 	int a=0;
 
-//	Declarações--
+//	DeclaraÃ§Ãµes--
 	controlbit = true;
 
 	IO_Pin_STM32 nrf_nss(IO_Pin::IO_Pin_Mode_OUT, SPI2_NSS_GPIO_Port, SPI2_NSS_Pin);
@@ -742,7 +742,7 @@ void StartDefaultTask(void const * argument)
 	a=nrf.SelfTest();
 
 	nrf.Init();
-	nrf.Config(); // configurações : DPL OK, ACK OK, ACK_NOT OK, POWER UP OK
+	nrf.Config(); // configuraÃ§Ãµes : DPL OK, ACK OK, ACK_NOT OK, POWER UP OK
 	nrf.StartRX_ESB(channel, address + id, 32, 1);
 	nrf.TxPackage_ESB(channel, address + id, 0,(uint8_t*) "TESTE", 5);
 	//while(nrf.Busy()){
@@ -761,7 +761,7 @@ void StartDefaultTask(void const * argument)
 	  a=nrf.SelfTest();
 
 
-	for(;;)/*Não entendi direito*/
+	for(;;)/*NÃ£o entendi direito*/
 	{
 
 		uint32_t size=0;
@@ -792,6 +792,7 @@ void StartDefaultTask(void const * argument)
 	/* USER CODE END 5 */
 }
 
+// Chamando as constantes externas
 int speed_usb_0;
 int speed_usb_1;
 int speed_saida_0;
@@ -851,7 +852,7 @@ velocidade_enviada1=(float)velocidade_enviada1/1000;
 	static const float PI = 3.1415926;
 	//valor do tempo em segundos
 	static const float Tempo = 0.013;
-	//número de divisões do encoder
+	//nÃºmero de divisÃµes do encoder
 	static const float ENC_DIV = 20;
 	//para cada 75 giros do motor, a roda gira 1 vez
 	static const float RED = 75;
@@ -960,6 +961,7 @@ velocidade_enviada1=(float)velocidade_enviada1/1000;
 			if(ierror_m1 > 1000) ierror_m1 = 1000;
 			if(ierror_m1 < -1000) ierror_m1 = -1000;
 
+	//Controle PID
 			pwm_m0 = 300.0f*velocidade_des0 + kp*e_m0 + ki*ierror_m0 + kd*derror_m0;
 			speed_saida_0 = pwm_m0*1000;
 			pwm_m1 = 300.0f*velocidade_des1 + kp*e_m1 + ki*ierror_m1 + kd*derror_m1;
